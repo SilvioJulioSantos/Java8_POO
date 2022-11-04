@@ -1,4 +1,4 @@
-package generation.dadosclientes;
+package generation.dadosclientes.model;
 
 public class Cliente {
 
@@ -57,14 +57,17 @@ public class Cliente {
         this.contato = contato;
     }
     public void visualizar(){
+
         System.out.println("\n| ************************************** |");
         System.out.println("|        DADOS DO CLIENTES               |");
         System.out.println("| ************************************** |");
-        System.out.println("|       Nome:" + this.getNomeCompleto()+"                |");
-        System.out.println("|       Gênero:" + this.sexo+"                 |");
+        System.out.println("|       Nome:" + this.getNomeCompleto()+"             |");
+        System.out.println("|       Gênero:" + this.sexo+"                  |");
         System.out.println("|       CPF:" + this.getCpf()+"                  |");
         System.out.println("|       Telefone:" + this.getContato()+"          |");
         System.out.println("|       Endereço:" + this.getEndereco()+"           |");
-        System.out.println("| ************************************** |");
+        System.out.println("| ************************************** |\n");
+
+
     }
 }

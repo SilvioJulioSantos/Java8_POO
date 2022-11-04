@@ -1,4 +1,4 @@
-package generation.dadosfuncionario;
+package generation.dadosfuncionario.model;
 
 public class Funcionario {
 
@@ -58,7 +58,7 @@ public class Funcionario {
     }
 
     public void visualizar(){
-        System.out.println("\n| ***********************************************|");
+        System.out.println("| ***********************************************|");
         System.out.println("|          API TECLOGE DESENVOLVIMENTO           |");
         System.out.println("|================================================|");
         System.out.println("|             DADOS DO FUNCIONÁRIO               |");
@@ -72,6 +72,6 @@ public class Funcionario {
         System.out.println("|       Função: "+ this.funcao+"    |");
         System.out.println("|------------------------------------------------|");
         System.out.println("|       Setor: " + this.setor+"          |");
-        System.out.println("| ***********************************************|");
+        System.out.println("| ***********************************************|\n");
     }
 }

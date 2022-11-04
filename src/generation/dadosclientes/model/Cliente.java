@@ -3,19 +3,21 @@ package generation.dadosclientes.model;
 public class Cliente {
 
     private String nomeCompleto;
-    private long cpf;
     private String sexo;
     private String endereco;
     private String contato;
 
+    private int idade=0;
 
-    public Cliente(String nomeCompleto, long cpf, String sexo, String endereco, String contato) {
+
+    public Cliente(String nomeCompleto, int idade, String sexo, String endereco, String contato) {
         this.nomeCompleto = nomeCompleto;
-        this.cpf = cpf;
+        this.idade=idade;
         this.sexo = sexo;
         this.endereco = endereco;
         this.contato = contato;
     }
+
 
     public String getNomeCompleto() {
         return nomeCompleto;
@@ -25,16 +27,16 @@ public class Cliente {
         this.nomeCompleto = nomeCompleto;
     }
 
-    public long getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(long cpf) {
-        this.cpf = cpf;
-    }
-
     public String getSexo() {
         return sexo;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
     public void setSexo(String sexo) {
@@ -58,15 +60,15 @@ public class Cliente {
     }
     public void visualizar(){
 
-        System.out.println("\n| ************************************** |");
-        System.out.println("|        DADOS DO CLIENTES               |");
         System.out.println("| ************************************** |");
-        System.out.println("|       Nome:" + this.getNomeCompleto()+"             |");
-        System.out.println("|       Gênero:" + this.sexo+"                  |");
-        System.out.println("|       CPF:" + this.getCpf()+"                  |");
-        System.out.println("|       Telefone:" + this.getContato()+"          |");
-        System.out.println("|       Endereço:" + this.getEndereco()+"           |");
-        System.out.println("| ************************************** |\n");
+        System.out.println("|         DADOS DO CLIENTES              |");
+        System.out.println("| ************************************** |");
+        System.out.println("     Nome:" + this.getNomeCompleto()+"             ");
+        System.out.println("     Idade:" + this.getIdade()+"                           ");
+        System.out.println("     Gênero:" + this.sexo+"                   ");
+        System.out.println("     Telefone:" + this.getContato()+"            ");
+        System.out.println("     Endereço:" + this.getEndereco()+"  ");
+
 
 
     }
